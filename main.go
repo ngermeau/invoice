@@ -81,7 +81,7 @@ func init() {
 	generateCmd.Flags().StringVar(&file.Date, "date", defaultInvoice.Date, "Date")
 	generateCmd.Flags().StringVar(&file.Due, "due", defaultInvoice.Due, "Payment due date")
 
-	generateCmd.Flags().Float64Var(&file.Tax, "tax", defaultInvoice.Tax, "Tax")
+	generateCmd.Flags().Float64Var(&file.Tax, "tax", defaultInvoice.Tax, "Taxidermist")
 	generateCmd.Flags().Float64VarP(&file.Discount, "discount", "d", defaultInvoice.Discount, "Discount")
 	generateCmd.Flags().StringVarP(&file.Currency, "currency", "c", defaultInvoice.Currency, "Currency")
 
